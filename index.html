@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+      <div class="logo">
+        <img src="odin-lined.png">
+        <p class="centered">ODIN</p>
+      </div>
+      <img src="splash.avif">
+    </div>
+    <div class="right-content">
+      <div class="hero-text">
+        <p class="main">This is not a real online service! You know you need something like this in your life to help you realise your deepest dreams. Sign up <em>now</em> to get started.</p>
+        <p class="sub">You <em>know</em> you want to.</p>
+      </div>
+      <div class="form-container">
+        <p class="cta">Let's do this!</p>
+        <form action="./index.html" method="post" id="form1">
+          <div class="inputs">
+            <div class="leftcolform">
+              <div class="form-row">
+                <label for="firstName">FIRST NAME</label>
+                <input type="text" id="firstName" placeholder="Thor" name="firstName">
+              </div>
+              <div class="form-row">
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" placeholder="hello@example.com" name="email">
+              </div>
+              <div class="form-row">
+                <label for="password">PASSWORD</label>
+                <input type="password" id="password" name="password">
+              </div>
+            </div>
+            <div class="rightcolform">
+              <div class="form-row">
+                <label for="lName">LAST NAME</label>
+                <input type="text" id="lName" placeholder="Odinson" name="lName">
+              </div>
+              <div class="form-row">
+                <label for="phoneNo">PHONE NUMBER</label>
+                <input type="tel" id="phoneNo" placeholder="07965872643" name="phoneNo">
+              </div>
+              <div class="form-row">
+                <label for="confPassword">CONFIRM PASSWORD</label>
+                <input type="password" id="confPassword" name="confPassword">
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="button-container">
+        <button class= "submit" type="submit" form="form1" value="Create Account">Create Account</button>
+        <p>Already have an account? <a href="./index.html">Log In</a></p>
+      </div>
+
+    </div>
+</body>
+</html>
