@@ -79,11 +79,12 @@ button, input, select, textarea {
   font-family: inherit;
   font-size: 100%;
   width : 250px;
-  height: 28px;
+  height: 30px;
   padding: 0 7px;
   margin: 0;
   box-sizing: border-box;
   border: 1px solid rgba(220, 220, 220, .75);
+  border-radius: 4px;
   box-shadow: 0 0.4px 0.5px 0 rgba(0, 0, 0, 0.2), 0 0.4px 0.5px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -96,7 +97,7 @@ button, input, select, textarea {
   display: flex;
   flex-direction: column;
   font-weight: 650;
-  font-size: 14px;
+  font-size: 12px;
   color: #2e4759;
   /* margin: 1rem; */
   margin-bottom: 2rem;
@@ -109,12 +110,20 @@ button, input, select, textarea {
 
 .form-row input[type='text']:invalid,
 .form-row input[type='email']:invalid,
-.form-row input[type='password']:invalid {
+.form-row input[type='password']:invalid,
+.form-row input[type='tel']:invalid {
   border: 1px solid #D55C5F;
   color: #D55C5F;
   box-shadow: none; /* Remove default red glow in Firefox */
 }
 
+.form-row input[type='text']:focus,
+.form-row input[type='email']:focus,
+.form-row input[type='password']:focus,
+.form-row input[type='tel']:invalid {
+  border: 1px solid #2e4759;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
 
 
 .cta {
